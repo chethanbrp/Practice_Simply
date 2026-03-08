@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AWS & DevOps Engineer Portfolio - Cloud Architecture, CI/CD, Infrastructure as Code">
+    <meta name="keywords" content="AWS, DevOps, Cloud Engineer, Kubernetes, Docker, Terraform, CI/CD">
+    <title>Your Name | AWS & DevOps Engineer</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Floating Background Elements -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo" data-aos="fade-down">Chethan B R
+                <!-- <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">CHETHAN</span>
+                <span class="logo-bracket">/&gt;</span> -->
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li data-aos="fade-down" data-aos-delay="100"><a href="#home" class="nav-link active">Home</a></li>
+                <li data-aos="fade-down" data-aos-delay="200"><a href="#about" class="nav-link">About</a></li>
+                <li data-aos="fade-down" data-aos-delay="300"><a href="#skills" class="nav-link">Skills</a></li>
+                <li data-aos="fade-down" data-aos-delay="400"><a href="#experience" class="nav-link">Experience</a></li>
+                <li data-aos="fade-down" data-aos-delay="500"><a href="#projects" class="nav-link">Projects</a></li>
+                <!-- <li data-aos="fade-down" data-aos-delay="600"><a href="#certifications" class="nav-link">Certifications</a></li> -->
+                <li data-aos="fade-down" data-aos-delay="700"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="theme-toggle" id="themeToggle" data-aos="fade-down" data-aos-delay="800">
+                <i class="fas fa-moon"></i>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side Social Links -->
+    <div class="social-sidebar left" data-aos="fade-right" data-aos-delay="1000">
+        <a href="https://github.com/chethanbrp" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/chethanbrp" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        <!-- <a href="https://twitter.com/yourusername" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a> -->
+        <a href="mailto:chethanbrp98@gmail.com"><i class="fas fa-envelope"></i></a>
+        <div class="social-line"></div>
+    </div>
+
+    <div class="social-sidebar right" data-aos="fade-left" data-aos-delay="1000">
+        <a href="mailto:chethanbrp98@gmail.com" class="email-link">chethanbrp98@gmail.com</a>
+        <div class="social-line"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-intro" data-aos="fade-up">Hi, my name is</p>
+                <h1 class="hero-name" data-aos="fade-up" data-aos-delay="100">
+                    Design. Automate. Scale
+                </h1>
+                <h2 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                   Cloud & DevOps Engineer delivering production-ready infrastructure.
+                    <!-- I build scalable cloud infrastructure. -->
+                </h2>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+                    I'm an <span class="highlight">AWS & DevOps Engineer</span> specializing in designing and implementing 
+                    robust cloud architectures, automating infrastructure, and optimizing CI/CD pipelines 
+                    for high-performance applications.
+                </p>
+                
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+
+                <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="500">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <p>Scroll Down</p>
+                </div>
+            </div>
+
+            <!-- Animated Terminal -->
+            <div class="terminal-animation" data-aos="fade-left" data-aos-delay="600">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn-close"></span>
+                        <span class="btn-minimize"></span>
+                        <span class="btn-maximize"></span>
+                    </div>
+                    <div class="terminal-title">bash - DevOps@AWS</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command" id="typedText"></span>
+                        <span class="cursor-blink">|</span>
+                    </div>
+                    <div class="terminal-output" id="terminalOutput"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">01.</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>
+                        Hello! I'm a passionate <strong>AWS & DevOps Engineer</strong> with expertise in 
+                        building and maintaining scalable cloud infrastructure. My journey in tech started 
+                        with a fascination for automation and has evolved into a career focused on 
+                        optimizing deployment pipelines and infrastructure management.
+                    </p>
+                    <p>
+                        I specialize in leveraging <strong>AWS services</strong>, <strong>containerization</strong>, 
+                        and <strong>Infrastructure as Code</strong> to create resilient, cost-effective solutions. 
+                        My experience spans across designing CI/CD pipelines, implementing microservices architectures, 
+                        and managing Kubernetes clusters at scale.
+                    </p>
+                    <p>
+                        Beyond my primary role, I offer selective DevOps consulting, delivering secure, scalable, and production-grade cloud architectures.
+                    </p>
+
+                    <div class="tech-stack">
+                        <p>Here are some technologies I work with:</p>
+                        <ul class="tech-list">
+                            <li><i class="fas fa-chevron-right"></i> AWS (EC2, EBS, ALB, SG, VPC, Lambda, S3, Cloud Watch, RDS etc.)</li>
+                            <li><i class="fas fa-chevron-right"></i> Docker & Kubernetes</li>
+                            <li><i class="fas fa-chevron-right"></i> Terraform, Ansible & CloudFormation</li>
+                            <li><i class="fas fa-chevron-right"></i> Jenkins, GitLab, GitHub Actions</li>
+                            <li><i class="fas fa-chevron-right"></i> Python, Bash Scripting</li>
+                            <li><i class="fas fa-chevron-right"></i> Monitoring (Prometheus, Grafana, and ELK Stack)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-wrapper">
+                        <img src="assets/cbr_1.jpeg" alt="Profile">
+                        <!-- <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&h=400&fit=crop" alt="Profile"> -->
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">02.</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-categories">
+                <!-- Cloud Platforms -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Platforms</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">AWS</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">GCP</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps Tools -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>DevOps & CI/CD</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Kubernetes</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Jenkins</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infrastructure as Code -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Infrastructure as Code</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Terraform</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CloudFormation</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Ansible</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Programming & Scripting</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Bash/Shell</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Scripting</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">YAML/JSON</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monitoring & Logging -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Monitoring & Observability</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Prometheus</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Grafana</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">ELK Stack</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CloudWatch</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Version Control & Collaboration -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
+                    <div class="category-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Version Control & Collaboration</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">GitHub</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">GitLab</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Bitbucket</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">03.</span>
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="experience-container">
+                <!-- Company Tabs -->
+                <div class="company-tabs" data-aos="fade-right">
+                    <button class="tab-button active" data-company="company1">
+                        <span>NowApps Technologies</span>
+                    </button>
+                    <button class="tab-button" data-company="company2">
+                        <span>Cloud Solutions Inc</span>
+                    </button>
+                    <button class="tab-button" data-company="company3">
+                        <span>Startup XYZ</span>
+                    </button>
+                    <div class="tab-indicator"></div>
+                </div>
+
+                <!-- Experience Content -->
+                <div class="experience-content" data-aos="fade-left">
+                    <!-- Company 1 -->
+                    <div class="company-panel active" id="company1">
+                        <h3>AWS and DevOps Engineer <span class="company-highlight">@ NowApps Technologies Pvt. Ltd. </span></h3>
+                        <p class="experience-duration">March 2025 - Present</p>
+                        <ul class="experience-list">
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Architected and delivered end-to-end AWS 3-tier infrastructure with integrated monitoring, 
+                                ensuring secure, scalable, and highly available production systems.
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Automated build and deployment processes using Jenkins and GitLab CI/CD, 
+                                reducing manual risk by 70% and ensuring consistent, error-free releases.
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Managed Dev, Test, Staging, and Production environments with consistent and reliable deployments.
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Automated routine tasks using cron jobs and shell scripts to improve operational efficiency.
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Implemented backup and disaster recovery strategies using EBS snapshots and AMI automation using Lambda.
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Secured servers with controlled access (VPN, IAM, security groups) and performed regular patching and maintenance.
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Implemented Infrastructure as Code using Terraform to provision and manage 3-tier AWS architecture, 
+                                ensuring rapid, consistent, and reliable deployments.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Company 2 -->
+                    <div class="company-panel" id="company2">
+                        <h3>DevOps Engineer <span class="company-highlight">@ Cloud Solutions Inc</span></h3>
+                        <p class="experience-duration">Jan 2022 - Feb 2025</p>
+                        <ul class="experience-list">
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Designed and deployed containerized applications using Docker and Kubernetes, 
+                                supporting 50+ microservices in production
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Automated infrastructure provisioning using Terraform and Ansible, reducing 
+                                manual setup time from days to hours
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Implemented blue-green deployment strategies, enabling zero-downtime releases 
+                                for critical applications
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Built custom monitoring dashboards and alerts, improving incident response 
+                                time by 50%
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Collaborated with development teams to optimize application performance and 
+                                implement best practices for cloud-native applications
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Company 3 -->
+                    <div class="company-panel" id="company3">
+                        <h3>Junior DevOps Engineer <span class="company-highlight">@ Startup XYZ</span></h3>
+                        <p class="experience-duration">March 2019 - May 2020</p>
+                        <ul class="experience-list">
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Maintained and optimized AWS infrastructure including EC2, S3, RDS, and Lambda 
+                                for early-stage startup applications
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Created automated backup and disaster recovery procedures, ensuring business 
+                                continuity and data protection
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Developed Python scripts for infrastructure automation and monitoring tasks, 
+                                reducing manual operational overhead by 30%
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Implemented security best practices including IAM policies, security groups, 
+                                and encryption for data at rest and in transit
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                Participated in on-call rotation and handled production incidents, developing 
+                                strong troubleshooting and problem-solving skills
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">04.</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card featured" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=500&fit=crop" alt="Kubernetes Auto-Scaler">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-label">Featured Project</p>
+                        <h3 class="project-title">CHANNELKONNECT</h3>
+                        <div class="project-description">
+                            <p>
+                                This is a B2B project management platform designed to support multiple enterprise clients 
+                                within a secure and scalable cloud environment. The system ensures high availability and 
+                                reliable performance while maintaining strong security standards. Each client operates within
+                                a protected environment with secure VPN connectivity to safeguard data and communications. 
+                                The platform includes real-time monitoring of application and database performance to maintain
+                                system stability. It also leverages managed database services to provide automated backups, 
+                                improved security, and enhanced reliability.
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>AWS</li>
+                            <li>Python</li>
+                            <li>Cloud Watch</li>
+                            <li>GitLab</li>
+                            <li>Jenkins</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/chethanbrp/3-Tier-Architecture_Deployment" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=500&fit=crop" alt="CI/CD Pipeline">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-label">Featured Project</p>
+                        <h3 class="project-title">TRADESKART</h3>
+                        <div class="project-description">
+                            <p>
+                                Architected enterprise-grade CI/CD pipeline using GitLab CI, ArgoCD, and Kubernetes. 
+                                Implemented blue-green deployments, automated testing, security scanning, and 
+                                canary releases. Achieved 99.9% deployment success rate with rollback capabilities.
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>GitLab CI</li>
+                            <li>ArgoCD</li>
+                            <li>Docker</li>
+                            <li>Helm</li>
+                            <li>SonarQube</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- Project 3 -->
+                <div class="project-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop" alt="Infrastructure as Code">
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-label">Featured Project</p>
+                        <h3 class="project-title">ReactJS Based Application Deployment using Docker</h3>
+                        <div class="project-description">
+                            <p>
+                                Architected and deployed a ReactJS application using Docker and Docker Compose, enabling reliable, 
+                                scalable, and environment-consistent production-ready deployments
+                            </p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>AWS</li>
+                            <li>DOCKER</li>
+                            <li>Docker-Compose</li>
+                            <li>Docker Registry</li>
+                            <li>GitHub</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/yourusername/project" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- More Projects -->
+            <div class="more-projects" data-aos="fade-up">
+                <h3>Other Notable Projects</h3>
+                <div class="projects-list">
+                    <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-item-header">
+                            <i class="fas fa-folder"></i>
+                            <div class="project-item-links">
+                                <a href="https://github.com/chethanbrp/3-Tier-Architecture_Deployment"><i class="fab fa-github"></i></a>
+                                <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                            </div>
+                        </div>
+                        <h4>3-Tier Architecture Deployment</h4>
+                        <p>Designed and deployed a three-tier architecture with Terraform to enable automated, reliable, 
+                           and scalable infrastructure provisioning across web, application, and database layers.</p>
+                        <ul class="tech-tags">
+                            <li>AWS</li>
+                            <li>EC2</li>
+                            <li>IAM</li>
+                            <li>Terraform</li>
+                            <li>HCL</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-item-header">
+                            <i class="fas fa-folder"></i>
+                            <div class="project-item-links">
+                                <a href="https://github.com/chethanbrp/django-notes-app"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h4>django notes appliication Deployment using Docker and K8S</h4>
+                        <p>Containerized a Django Notes application using Docker and deployed it on Kubernetes to ensure scalable and efficient application management.</p>
+                        <ul class="tech-tags">
+                            <li>AWS</li>
+                            <li>Docker</li>
+                            <li>Jenkins</li>
+                            <li>GitHub</li>
+                            <li>Kubernetes</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-item-header">
+                            <i class="fas fa-folder"></i>
+                            <div class="project-item-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                            </div>
+                        </div>
+                        <h4>Hospital Management System application Deployment</h4>
+                        <p>A 3-tier PHP-MySQL web application for managing hospital operations, including patient records, 
+                            appointments, billing, and staff. Deployed with separate web, app, and database layers for 
+                            scalability, reliability, and easier maintenance.</p>
+                        <ul class="tech-tags">
+                            <li>AWS</li>
+                            <li>EC2</li>
+                            <li>VPC</li>
+                            <li>CloudWatch</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-item-header">
+                            <i class="fas fa-folder"></i>
+                            <div class="project-item-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h4>Terraform Module Library</h4>
+                        <p>Reusable Terraform modules for common AWS infrastructure patterns with comprehensive documentation</p>
+                        <ul class="tech-tags">
+                            <li>Terraform</li>
+                            <li>AWS</li>
+                            <li>HCL</li>
+                            <li>Documentation</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="project-item-header">
+                            <i class="fas fa-folder"></i>
+                            <div class="project-item-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h4>Automated Backup System</h4>
+                        <p>Cross-region backup solution for databases and S3 with automated restoration testing and compliance tracking</p>
+                        <ul class="tech-tags">
+                            <li>Python</li>
+                            <li>AWS Backup</li>
+                            <li>Lambda</li>
+                            <li>SNS</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item" data-aos="fade-up" data-aos-delay="600">
+                        <div class="project-item-header">
+                            <i class="fas fa-folder"></i>
+                            <div class="project-item-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h4>DevOps Toolkit CLI</h4>
+                        <p>Command-line interface tool aggregating common DevOps tasks and cloud operations with extensible plugin system</p>
+                        <ul class="tech-tags">
+                            <li>Go</li>
+                            <li>CLI</li>
+                            <li>AWS SDK</li>
+                            <li>Cobra</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+<!--<section class="certifications section" id="certifications">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">05.</span>
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="certifications-grid">
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-icon aws">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS Solutions Architect - Professional</h3>
+                    <p class="cert-issuer">Amazon Web Services</p>
+                    <p class="cert-date">Valid: 2022 - 2025</p>
+                    <a href="#" class="cert-verify">Verify Credential →</a>
+                </div>
+
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-icon aws">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS DevOps Engineer - Professional</h3>
+                    <p class="cert-issuer">Amazon Web Services</p>
+                    <p class="cert-date">Valid: 2022 - 2025</p>
+                    <a href="#" class="cert-verify">Verify Credential →</a>
+                </div>
+
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-icon cka">
+                        <i class="fas fa-dharmachakra"></i>
+                    </div>
+                    <h3>Certified Kubernetes Administrator (CKA)</h3>
+                    <p class="cert-issuer">Cloud Native Computing Foundation</p>
+                    <p class="cert-date">Valid: 2023 - 2026</p>
+                    <a href="#" class="cert-verify">Verify Credential →</a>
+                </div>
+
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="cert-icon terraform">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>HashiCorp Certified: Terraform Associate</h3>
+                    <p class="cert-issuer">HashiCorp</p>
+                    <p class="cert-date">Valid: 2023 - 2025</p>
+                    <a href="#" class="cert-verify">Verify Credential →</a>
+                </div>
+
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="cert-icon docker">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3>Docker Certified Associate</h3>
+                    <p class="cert-issuer">Docker Inc.</p>
+                    <p class="cert-date">Valid: 2022 - 2024</p>
+                    <a href="#" class="cert-verify">Verify Credential →</a>
+                </div>
+
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="cert-icon azure">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>Azure Administrator Associate</h3>
+                    <p class="cert-issuer">Microsoft</p>
+                    <p class="cert-date">Valid: 2023 - 2024</p>
+                    <a href="#" class="cert-verify">Verify Credential →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-number">05.</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+
+            <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
+                <p class="contact-text">
+                    I'm currently open to new opportunities and interesting projects. Whether you have a 
+                    question, want to collaborate, or just want to say hi, feel free to reach out!
+                </p>
+
+                <div class="contact-methods">
+                    <a href="mailto:chethanbrp98@gmail.com" class="contact-btn">
+                        <i class="fas fa-envelope"></i>
+                        <span>Send Email</span>
+                    </a>
+                    <a href="https://linkedin.com/in/chethanbrp" class="contact-btn" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>Connect on LinkedIn</span>
+                    </a>
+                    <a href="/resume/chethanbr_resume.pdf" class="contact-btn" download>
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Designed & Built by <span class="highlight">Chethan B R</span></p>
+                <div class="footer-social">
+                    <a href="https://github.com/chethanbrp" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/chethanbrp" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <!-- <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a> -->
+                    <a href="mailto:chethanbrp98@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-note">Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Typed.js for typing animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
